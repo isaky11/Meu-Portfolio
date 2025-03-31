@@ -22,7 +22,6 @@ body{
 .cabecalho .logo{
     width: 65px;
     height: 65px;
-    border-radius: 50%;
     border: 2px dotted #fff;
     text-decoration: underline;
     text-align: center;
@@ -36,8 +35,10 @@ body{
     border: 2px solid #9443d8;
 }
 
-.cabecalho .menu li a{
+.cabecalho .menu li a.borda{
     font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid #fff;
     text-transform: capitalize;
     padding: 10px 20px;
     transition: 0.2s;
