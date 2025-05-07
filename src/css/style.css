@@ -37,11 +37,18 @@ body{
 
 .cabecalho .menu li a.borda{
     font-size: 20px;
-    border-radius: 50px;
+    border-radius: 6%;
     border: 1px solid #fff;
     text-transform: capitalize;
     padding: 10px 20px;
     transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+    .cabecalho .menu li a.borda {
+        margin-left: auto; 
+        padding: 10px 15px;
+    }
 }
 
 .cabecalho .menu li a:hover{
@@ -142,7 +149,15 @@ body{
     flex-wrap: wrap;
     margin-bottom: 20px;
     justify-content: center;
-}    
+}   
+
+@media (max-width: 768px) {
+    .projetos .container-projetos {
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        gap: 10px; 
+    }
+}
 
 .projetos .projeto{
     max-width: 260px;
